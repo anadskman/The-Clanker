@@ -1,35 +1,236 @@
-# Documentation: https://rmk.rs/docs/configuration.html
 [keyboard]
-name = "RMK Keyboard"
-product_name = "RMK Keyboard"
-vendor_id = 0x4c4b
-product_id = 0x4643
-manufacturer = "RMK"
+name = "The Clanker"
+product_name = "The Clanker"
+vendor_id = 0x4A43
+product_id = 0x0065
+manufacturer = "Jason Clark"
 chip = "rp2040"
 
-[matrix]
-# Row and col pins are mandatory
-row_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
-col_pins = ["PIN_19", "PIN_20", "PIN_21"]
 
-# RMK uses col2row as the default matrix diode direction, if you want to use a row2col matrix, add `row2col = true`
-# row2col = true
+[matrix]
+row_pins = [
+    "GP0",
+    "GP1",
+    "GP2",
+    "GP3",
+    "GP4"
+]
+
+col_pins = [
+    "GP5",
+    "GP6",
+    "GP7",
+    "GP8",
+    "GP9",
+    "GP10",
+    "GP11",
+    "GP12",
+    "GP13",
+    "GP14",
+    "GP15",
+    "GP16",
+    "GP17",
+    "GP18",
+    "GP28"
+]
+
+# MX diodes point column -> row
+row2col = false
+
 
 [layout]
-rows = 4
-cols = 3
+rows = 5
+cols = 15
 layers = 2
+
+
 keymap = [
-    [
-        ["A", "B", "C"],
-        ["Kc1", "Kc2", "Kc3"],
-        ["LCtrl", "MO(1)", "LShift"],
-        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)"]
-    ],
-    [
-        ["_", "TT(1)", "TG(2)"],
-        ["_", "_", "_"],
-        ["_", "_", "_"],
-        ["_", "_", "_"]
-    ],
+
+# Layer 0 - Normal
+[
+[
+"Esc",
+"1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"0",
+"-",
+"=",
+"Backspace",
+"Delete"
+],
+
+[
+"Tab",
+"Q",
+"W",
+"E",
+"R",
+"T",
+"Y",
+"U",
+"I",
+"O",
+"P",
+"[",
+"]",
+"\\",
+"`"
+],
+
+[
+"CapsLock",
+"A",
+"S",
+"D",
+"F",
+"G",
+"H",
+"J",
+"K",
+"L",
+";",
+"'",
+"Enter",
+"_",
+"PageUp"
+],
+
+[
+"LeftShift",
+"Z",
+"X",
+"C",
+"V",
+"B",
+"N",
+"M",
+",",
+".",
+"/",
+"RightShift",
+"_",
+"Up",
+"PageDown"
+],
+
+[
+"LeftCtrl",
+"LeftGUI",
+"LeftAlt",
+"Space",
+"_",
+"_",
+"_",
+"_",
+"_",
+"RightAlt",
+"Fn",
+"RightCtrl",
+"Left",
+"Down",
+"Right"
+]
+],
+
+
+# Layer 1 - Fn layer
+[
+[
+"Esc",
+"F1",
+"F2",
+"F3",
+"F4",
+"F5",
+"F6",
+"F7",
+"F8",
+"F9",
+"F10",
+"F11",
+"F12",
+"Delete",
+"Insert"
+],
+
+[
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_"
+],
+
+[
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"Home"
+],
+
+[
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"PageUp",
+"End"
+],
+
+[
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"_",
+"Fn",
+"_",
+"Home",
+"PageDown",
+"End"
+]
+]
+
 ]
