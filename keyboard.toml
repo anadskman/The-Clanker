@@ -1,11 +1,12 @@
+# Documentation: https://rmk.rs/docs/configuration.html
+
 [keyboard]
 name = "The Clanker"
-product_name = "The Clanker 65%"
+product_name = "The Clanker"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "Jason"
 chip = "rp2040"
-
 
 [matrix]
 row_pins = [
@@ -41,11 +42,11 @@ cols = 15
 layers = 1
 
 keymap = [
-    [
-        ["KcEsc","Kc1","Kc2","Kc3","Kc4","Kc5","Kc6","Kc7","Kc8","Kc9","Kc0","KcMinus","KcEqual","KcBackspace","KcDelete"],
-        ["KcTab","KcQ","KcW","KcE","KcR","KcT","KcY","KcU","KcI","KcO","KcP","KcLeftBracket","KcRightBracket","KcBackslash","KcGrave"],
-        ["KcCapsLock","KcA","KcS","KcD","KcF","KcG","KcH","KcJ","KcK","KcL","KcSemicolon","KcQuote","KcEnter","_","KcPageUp"],
-        ["KcLShift","KcZ","KcX","KcC","KcV","KcB","KcN","KcM","KcComma","KcDot","KcSlash","KcRShift","_","KcUp","KcPageDown"],
-        ["KcLCtrl","KcLGui","KcLAlt","KcSpace","_","_","_","_","_","KcRAlt","MO(1)","KcRGui","KcLeft","KcDown","KcRight"]
-    ]
+[
+["Grave","1","2","3","4","5","6","7","8","9","0","Minus","Equal","Backspace","Backspace"],
+["Tab","Q","W","E","R","T","Y","U","I","O","P","LeftBracket","RightBracket","Backslash","Backslash"],
+["CapsLock","A","S","D","F","G","H","J","K","L","Semicolon","Quote","Enter","Enter","Enter"],
+["LShift","Z","X","C","V","B","N","M","Comma","Dot","Slash","RShift","Up","Up","Up"],
+["LCtrl","LGui","LAlt","Space","Space","Space","Space","Space","Space","RAlt","Fn","Menu","Left","Down","Right"]
+]
 ]
