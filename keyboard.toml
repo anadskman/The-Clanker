@@ -1,41 +1,38 @@
 [keyboard]
 name = "The Clanker"
-product_name = "The Clanker"
-vendor_id = 0x4A43
-product_id = 0x0065
-manufacturer = "Jason Clark"
+product_name = "The Clanker 65%"
+vendor_id = 0x4c4b
+product_id = 0x4643
+manufacturer = "Jason"
 chip = "rp2040"
 
 
 [matrix]
 row_pins = [
-    "GP0",
-    "GP1",
-    "GP2",
-    "GP3",
-    "GP4"
+    "PIN_0",
+    "PIN_1",
+    "PIN_2",
+    "PIN_3",
+    "PIN_4"
 ]
 
 col_pins = [
-    "GP5",
-    "GP6",
-    "GP7",
-    "GP8",
-    "GP9",
-    "GP10",
-    "GP11",
-    "GP12",
-    "GP13",
-    "GP14",
-    "GP15",
-    "GP16",
-    "GP17",
-    "GP18",
-    "GP28"
+    "PIN_5",
+    "PIN_6",
+    "PIN_7",
+    "PIN_8",
+    "PIN_9",
+    "PIN_10",
+    "PIN_11",
+    "PIN_12",
+    "PIN_13",
+    "PIN_14",
+    "PIN_15",
+    "PIN_16",
+    "PIN_17",
+    "PIN_18",
+    "PIN_28"
 ]
-
-# MX diodes point column -> row
-row2col = false
 
 
 [layout]
@@ -43,194 +40,129 @@ rows = 5
 cols = 15
 layers = 2
 
-
 keymap = [
-
-# Layer 0 - Normal
 [
-[
-"Esc",
-"1",
-"2",
-"3",
-"4",
-"5",
-"6",
-"7",
-"8",
-"9",
-"0",
-"-",
-"=",
-"Backspace",
-"Delete"
+"KcEsc",
+"Kc1",
+"Kc2",
+"Kc3",
+"Kc4",
+"Kc5",
+"Kc6",
+"Kc7",
+"Kc8",
+"Kc9",
+"Kc0",
+"KcMinus",
+"KcEqual",
+"KcBackspace",
+"KcDelete"
 ],
 
 [
-"Tab",
-"Q",
-"W",
-"E",
-"R",
-"T",
-"Y",
-"U",
-"I",
-"O",
-"P",
-"[",
-"]",
-"\\",
-"`"
-],
-
-[
-"CapsLock",
-"A",
-"S",
-"D",
-"F",
-"G",
-"H",
-"J",
-"K",
-"L",
-";",
-"'",
-"Enter",
-"_",
-"PageUp"
-],
-
-[
-"LeftShift",
-"Z",
-"X",
-"C",
-"V",
-"B",
-"N",
-"M",
-",",
-".",
-"/",
-"RightShift",
-"_",
-"Up",
-"PageDown"
-],
-
-[
-"LeftCtrl",
-"LeftGUI",
-"LeftAlt",
-"Space",
-"_",
-"_",
-"_",
-"_",
-"_",
-"RightAlt",
-"Fn",
-"RightCtrl",
-"Left",
-"Down",
-"Right"
-]
-],
-
-
-# Layer 1 - Fn layer
-[
-[
-"Esc",
-"F1",
-"F2",
-"F3",
-"F4",
-"F5",
-"F6",
-"F7",
-"F8",
-"F9",
-"F10",
-"F11",
-"F12",
-"Delete",
-"Insert"
-],
-
-[
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
+"KcTab",
+"KcQ",
+"KcW",
+"KcE",
+"KcR",
+"KcT",
+"KcY",
+"KcU",
+"KcI",
+"KcO",
+"KcP",
+"KcLeftBracket",
+"KcRightBracket",
+"KcBackslash",
 "_"
 ],
 
 [
+"KcCapsLock",
+"KcA",
+"KcS",
+"KcD",
+"KcF",
+"KcG",
+"KcH",
+"KcJ",
+"KcK",
+"KcL",
+"KcSemicolon",
+"KcQuote",
+"KcEnter",
 "_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"Home"
+"KcPageUp"
 ],
 
 [
+"KcLShift",
+"KcZ",
+"KcX",
+"KcC",
+"KcV",
+"KcB",
+"KcN",
+"KcM",
+"KcComma",
+"KcDot",
+"KcSlash",
+"KcRShift",
 "_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"PageUp",
-"End"
+"KcUp",
+"KcPageDown"
 ],
 
 [
+"KcLCtrl",
+"KcLGui",
+"KcLAlt",
+"KcSpace",
 "_",
 "_",
 "_",
 "_",
 "_",
-"_",
-"_",
-"_",
-"_",
-"_",
-"Fn",
-"_",
-"Home",
-"PageDown",
-"End"
-]
+"KcRAlt",
+"MO(1)",
+"KcRGui",
+"KcLeft",
+"KcDown",
+"KcRight"
 ]
 
+],
+
+
+[
+[
+"_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"
+],
+[
+"KcF1",
+"KcF2",
+"KcF3",
+"KcF4",
+"KcF5",
+"KcF6",
+"KcF7",
+"KcF8",
+"KcF9",
+"KcF10",
+"KcF11",
+"KcF12",
+"_",
+"_",
+"_"
+],
+[
+"_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"
+],
+[
+"_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"
+],
+[
+"_","_","_","_","_","_","_","_","_","_","_","_","_","_","_"
+]
+]
 ]
