@@ -39,7 +39,7 @@ col_pins = [
 [layout]
 rows = 5
 cols = 15
-layers = 1
+layers = 2
 
 keymap = [
 [
@@ -47,6 +47,15 @@ keymap = [
 ["Tab","Q","W","E","R","T","Y","U","I","O","P","LeftBracket","RightBracket","Backslash","Backslash"],
 ["CapsLock","A","S","D","F","G","H","J","K","L","Semicolon","Quote","Enter","Enter","Enter"],
 ["LShift","Z","X","C","V","B","N","M","Comma","Dot","Slash","RShift","Up","Up","Up"],
-["LCtrl","LGui","LAlt","Space","Space","Space","Space","Space","Space","RAlt","Fn","Menu","Left","Down","Right"]
+["LCtrl","LGui","LAlt","Space","Space","Space","Space","Space","Space","RAlt","MO(1)","Menu","Left","Down","Right"]
+]
+[
+[
+["Esc","F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","F11","F12","Delete","Delete"],
+["Tab","Q","W","E","R","T","Y","U","I","O","P","LeftBracket","RightBracket","Backslash","Backslash"],
+["CapsLock","A","S","D","F","G","H","J","K","L","Semicolon","Quote","Enter","Enter","Enter"],
+["LShift","Z","X","C","V","B","N","M","Comma","Dot","Slash","RShift","Up","Up","Up"],
+["LCtrl","LGui","LAlt","Space","Space","Space","Space","Space","Space","RAlt","MO(1)","Menu","Left","Down","Right"]
+]
 ]
 ]
